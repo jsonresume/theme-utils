@@ -9,8 +9,8 @@ function getFormattedDate(date, date_format) {
 
 function humanizeDuration(duration) {
    var days,
-       months = moment_obj.months(),
-       years = moment_obj.years(),
+       months = duration.months(),
+       years = duration.years(),
        month_str = months > 1 ? 'months' : 'month',
        year_str = years > 1 ? 'years' : 'year';
 
@@ -26,7 +26,7 @@ function humanizeDuration(duration) {
         return years + ' ' + year_str;
     }
 
-    days = moment_obj.days();
+    days = duration.days();
 
     return ( days > 1 ? days + ' days' : days + ' day' );
 }
