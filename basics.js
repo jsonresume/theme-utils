@@ -28,7 +28,7 @@ function getUrlForPicture(resume) {
 }
 
 function getProfile(resume, network) {
-    var profiles = resume.profiles;
+    var profiles = resume.basics.profiles;
 
     return _.find(profiles, function(profile) {
         return profile.network.toLowerCase() === network.toLowerCase();
