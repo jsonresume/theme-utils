@@ -1,0 +1,30 @@
+{
+  "name": "jsonresume-themeutils",
+  "version": "0.0.0",
+  "description": "Utility methods for jsonresume theme developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mudassir0909/jsonresume-themeutils.git"
+  },
+  "keywords": [
+    "jsonresume",
+    "utils",
+    "utility",
+    "functions"
+  ],
+  "author": "Mudassir Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mudassir0909/jsonresume-themeutils/issues"
+  },
+  "homepage": "https://github.com/mudassir0909/jsonresume-themeutils",
+  "dependencies": {
+    "gravatar": "^1.1.0",
+    "moment": "^2.8.4",
+    "underscore": "^1.7.0"
+  }
+}
