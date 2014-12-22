@@ -34,8 +34,8 @@ function humanizeDuration(duration) {
 function getDuration(start_date, end_date, humanize) {
     var duration;
 
-    start_date = moment(start_date);
-    end_date = moment(end_date);
+    start_date = new Date(start_date);
+    end_date = new Date(end_date);
     duration = moment.duration(end_date.getTime() - start_date.getTime());
 
     return (humanize ? humanizeDuration(duration) : duration);
