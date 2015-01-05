@@ -8,20 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mudassir0909/jsonresume-themeutils.git"
+    "url": "https://github.com/jsonresume/theme-utils.git"
   },
   "keywords": [
     "jsonresume",
+    "theme",
     "utils",
     "utility",
     "functions"
   ],
-  "author": "Mudassir Ali",
-  "license": "ISC",
+  "author": "",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mudassir0909/jsonresume-themeutils/issues"
+    "url": "https://github.com/jsonresume/theme-utils/issues"
   },
-  "homepage": "https://github.com/mudassir0909/jsonresume-themeutils",
+  "homepage": "https://github.com/jsonresume/theme-utils",
   "dependencies": {
     "gravatar": "^1.1.0",
     "moment": "^2.8.4",
