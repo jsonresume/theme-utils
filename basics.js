@@ -16,7 +16,8 @@ var config = require('./config'),
         dribbble: 'dribbble.com',
         facebook: 'facebook.com',
         angellist: 'angel.co',
-        bitbucket: 'bitbucket.org'
+        bitbucket: 'bitbucket.org',
+        exercism: 'exercism.io'
     };
 
 function getPictureFromEmail(email) {
