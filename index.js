@@ -1,7 +1,8 @@
 var config = require('./config'),
     basics = require('./basics'),
     common = require('./common'),
-    languages = require('./languages');
+    languages = require('./languages'),
+    _ = require('underscore');
 
 function setConfig(opts) {
     _.extend(config, opts || {});
