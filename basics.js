@@ -17,7 +17,16 @@ var config = require('./config'),
         facebook: 'facebook.com',
         angellist: 'angel.co',
         bitbucket: 'bitbucket.org',
-        exercism: 'exercism.io'
+        exercism: 'exercism.io',
+        instagram: 'instagram.com',
+        googleplus: 'plus.google.com',
+        gratipay: 'gratipay.com',
+        hackernews: 'news.ycombinator.com',
+        lastfm: 'last.fm',
+        stackexchange: 'stackexchange.com',
+        stackoverflow: 'stackoverflow.com',
+        tumblr: 'tumblr.com',
+        youtube: 'youtube.com'
     };
 
 function getPictureFromEmail(email) {
@@ -56,7 +65,16 @@ function getUrlForProfile(resume, network) {
             return 'skype:' + username + '?call';
         case 'reddit':
         case 'spotify':
+        case 'lastfm':
+        case 'youtube':
             return '//' + url + '/user/' + username;
+        case 'hackernews':
+            return '//' + url + '/user?id=' + username;
+        case 'stackexchange':
+        case 'stackoverflow':
+            return '//' + url + '/users/' + username;
+        case 'tumblr':
+            return '//' + username + '.' + url;
         default:
             return '//' + url + '/' + username;
     }
