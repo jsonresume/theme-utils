@@ -66,6 +66,7 @@ function getUrlForProfile(resume, network) {
         case 'reddit':
         case 'spotify':
         case 'lastfm':
+        case 'foursquare':
         case 'youtube':
             return '//' + url + '/user/' + username;
         case 'hackernews':
