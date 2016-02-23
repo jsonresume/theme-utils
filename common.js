@@ -4,7 +4,7 @@ var config = require('./config'),
 function getFormattedDate(date, date_format) {
     date_format = date_format || config.date_format;
 
-    return moment(date).format(date_format);
+    return moment(date, date_format);
 }
 
 function humanizeDuration(duration) {
