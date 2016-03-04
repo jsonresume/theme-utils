@@ -2,9 +2,10 @@ var config = require('./config'),
     moment = require('moment');
 
 function getFormattedDate(date, date_format) {
-    date_format = date_format || config.date_format;
+    var DATE_FORMAT_INPUT = 'YYYY-MM-DD'; // resume.json standard date format
+    date_format = date_format || config.date_format; // output format
 
-    return moment(date).format(date_format);
+    return moment(date, DATE_FORMAT_INPUT).format(date_format);
 }
 
 function humanizeDuration(duration) {
