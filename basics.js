@@ -26,7 +26,9 @@ var config = require('./config'),
         stackexchange: 'stackexchange.com',
         stackoverflow: 'stackoverflow.com',
         tumblr: 'tumblr.com',
-        youtube: 'youtube.com'
+        youtube: 'youtube.com',
+        medium: 'medium.com',
+        blogger: 'blogspot.com'
     };
 
 function getPictureFromEmail(email) {
@@ -60,6 +62,11 @@ function getUrlForProfile(resume, network) {
         return;
     }
 
+    //in case user forgets to append `@` at the start of username for medium accounts
+    if (network === 'medium' && !/^@.*/.test(username)) {
+        username = '@' + username;
+    }
+
     switch(network) {
         case 'skype':
             return 'skype:' + username + '?call';
@@ -75,6 +82,7 @@ function getUrlForProfile(resume, network) {
         case 'stackoverflow':
             return '//' + url + '/users/' + username;
         case 'tumblr':
+        case 'blogger':
             return '//' + username + '.' + url;
         default:
             return '//' + url + '/' + username;
