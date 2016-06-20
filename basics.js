@@ -28,7 +28,9 @@ var config = require('./config'),
         tumblr: 'tumblr.com',
         youtube: 'youtube.com',
         medium: 'medium.com',
-        blogger: 'blogspot.com'
+        blogger: 'blogspot.com',
+        meetup: 'meetup.com',
+        flickr: 'flickr.com'
     };
 
 function getPictureFromEmail(email) {
@@ -84,6 +86,10 @@ function getUrlForProfile(resume, network) {
         case 'tumblr':
         case 'blogger':
             return '//' + username + '.' + url;
+        case 'meetup':
+            return '//' + url + '/members/' + username;
+        case 'flickr':
+            return '//' + url + '/people/' + username;
         default:
             return '//' + url + '/' + username;
     }
