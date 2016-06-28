@@ -1,6 +1,8 @@
 jsonresume-themeutils
 =====================
 
+[![Dependency Status](https://david-dm.org/jsonresume/theme-utils.svg)](https://david-dm.org/jsonresume/theme-utils)
+
 Helpful set of utility methods for jsonresume theme developers
 
 # Getting Started
