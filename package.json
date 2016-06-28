@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/jsonresume/theme-utils",
   "dependencies": {
-    "gravatar": "^1.1.0",
-    "moment": "^2.8.4",
-    "underscore": "^1.7.0"
+    "gravatar": "^1.5.2",
+    "moment": "^2.13.0",
+    "underscore": "^1.8.3"
   }
 }
