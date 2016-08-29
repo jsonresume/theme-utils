@@ -34,7 +34,7 @@ var config = require('./config'),
     };
 
 function getPictureFromEmail(email) {
-    return gravatar.url(email, config.gravatar);
+    return gravatar.url(email, config.gravatar, 'https');
 }
 
 function getUrlForPicture(resume) {
