@@ -30,7 +30,8 @@ var config = require('./config'),
         medium: 'medium.com',
         blogger: 'blogspot.com',
         meetup: 'meetup.com',
-        flickr: 'flickr.com'
+        flickr: 'flickr.com',
+        telegram: 'telegram.me'
     };
 
 function getPictureFromEmail(email) {
