@@ -1,6 +1,8 @@
 jsonresume-themeutils
 =====================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jsonresume/theme-utils.svg)](https://greenkeeper.io/)
+
 [![Dependency Status](https://david-dm.org/jsonresume/theme-utils.svg)](https://david-dm.org/jsonresume/theme-utils)
 
 Helpful set of utility methods for jsonresume theme developers
